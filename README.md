@@ -38,5 +38,4 @@ iex(3)> Catapult.update_candidate_skill("Mary", "hostess")
 ```
 iex(4)> Catapult.calculate_rate("Mary")
 8.25
-
 ```
