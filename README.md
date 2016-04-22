@@ -1,20 +1,17 @@
 # Catapult
 
-**TODO: Add description**
+# Author
+
+**Description**
+A simple console based app designed as a way to understand the Elixir Syntax. A User can retreve candidate profiles, Add skills to candidates and calculate what their Caltapult charge out rate would be.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+```
+git clone https://github.com/russellvaughan/Elixir.git
+cd lib
+elixirc catapult.ex
+iex
+```
 
-  1. Add catapult to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:catapult, "~> 0.0.1"}]
-        end
-
-  2. Ensure catapult is started before your application:
-
-        def application do
-          [applications: [:catapult]]
-        end
 
