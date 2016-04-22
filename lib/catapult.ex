@@ -9,8 +9,9 @@ defmodule Catapult do
 
 	def get_candidate_profile(name) do 
 		 candidate=convert_to_candidate(name)
-		 candidates[candidate].first_name<>" "<>candidates[candidate].last_name<>"\n"<>"£"<>
-		 rate_converter(candidates[candidate].hourly_rate)<>"\n"<>list_to_string(candidates[candidate].skills)
+		 "Name: "<>candidates[candidate].first_name<>" "<>candidates[candidate].last_name<>"\n"<>
+		 "Rate: £"<>rate_converter(candidates[candidate].hourly_rate)<>"\n"<>
+		 "Skills: "<>list_to_string(candidates[candidate].skills)
 	end
 
 	def add_candidate(candidate) do
@@ -38,7 +39,7 @@ defmodule Catapult do
 	end
 
 	def list_to_string(list) do 
-	skills = Enum.join(list, ", ")
+	Enum.join(list, ", ")
 	end
 
 end
